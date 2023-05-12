@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-12T09:03:11.246Z</updated>
+  <updated>2023-05-12T09:38:32.290Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>反混淆工具de4dot的使用</title>
+    <link href="http://example.com/2023/05/12/%E5%8F%8D%E6%B7%B7%E6%B7%86%E5%B7%A5%E5%85%B7de4dot%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2023/05/12/%E5%8F%8D%E6%B7%B7%E6%B7%86%E5%B7%A5%E5%85%B7de4dot%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-05-12T08:39:56.000Z</published>
+    <updated>2023-05-12T09:38:32.290Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在之前的文章中我们讲述了如何利用dnSpy反编译.NET程序,但例子过于简单。</p><p>在非开源作品中绝大多数都进行了代码混淆,例如以下程序:</p><p><img src="D:\Work-E\MyCookies\source_posts\imges\2023-05-12-17-10-01-image.png"></p><p>这样的代码是难以阅读的,这时候就要用到反混淆工具de4dot</p><h2 id="de4dot安装"><a href="#de4dot安装" class="headerlink" title="de4dot安装"></a>de4dot安装</h2><p>de4dot下载-&gt;<a href="https://github.com/de4dot/de4dot">Click</a></p><p>需要自行编译生成exe文件,解压后根据Visual Studio及SDK版本选择对应sln</p><p><img src="D:\Work-E\MyCookies\source_posts\imges\2023-05-12-17-13-39-image.png"></p><p>de4dot.netcore.sln对应.net core2.1及3.1</p><p>de4dot.netframework.sln对应.net framework3.5及4.5</p><p>进入项目后按F6键后进入以下目录:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">解压文件夹名称\Debug\SDK版本文件夹</span><br></pre></td></tr></table></figure><p>例:笔者的SDK版本为.net core3.1,exe文件生成路径为:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">temp\Debug\netcoreapp3.1</span><br></pre></td></tr></table></figure><p><img src="D:\Work-E\MyCookies\source_posts\imges\2023-05-12-17-21-26-image.png"></p><h2 id="de4dot的使用"><a href="#de4dot的使用" class="headerlink" title="de4dot的使用"></a>de4dot的使用</h2><p>win+r -&gt; cmd -&gt; cd到exe文件所在路径,执行以下命令:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">de4dot 你要执行反混淆文件的路径</span><br></pre></td></tr></table></figure><p>这里以反混淆D:\TEMP\Temp.exe为例:</p><p><img src="D:\Work-E\MyCookies\source_posts\imges\2023-05-12-17-27-29-image.png"></p><p>在控制台执行以下命令:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">de4dot D:\TEMP\Temp.exe</span><br></pre></td></tr></table></figure><p><img src="D:\Work-E\MyCookies\source_posts\imges\2023-05-12-17-33-14-image.png">执行完毕后,TEMP内生成了反混淆后的exe文件</p><p><img src="D:\Work-E\MyCookies\source_posts\imges\2023-05-12-17-30-04-image.png"></p><p>在dnSpy中打开该文件,发现混淆已去除</p><p><img src="D:\Work-E\MyCookies\source_posts\imges\2023-05-12-17-35-59-image.png"></p><h2 id="de4dot扩展使用"><a href="#de4dot扩展使用" class="headerlink" title="de4dot扩展使用"></a>de4dot扩展使用</h2><p>待续…</p><h2 id="后谈"><a href="#后谈" class="headerlink" title="后谈"></a>后谈</h2><p>反混淆仅用于学习,请勿用于暴力破解商业软件。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在之前的文章中我们讲述了如何利用dnSpy反编译.NET程序,但例子过于简单。&lt;/p&gt;
+&lt;p&gt;在非开源作品中绝大多数都进行了代码混淆,例如以</summary>
+      
+    
+    
+    
+    <category term=".NET" scheme="http://example.com/categories/NET/"/>
+    
+    
+    <category term="开发工具" scheme="http://example.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>WPF中的MVVM模式</title>
