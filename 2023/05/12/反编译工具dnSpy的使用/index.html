@@ -17,18 +17,29 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Cookies&#39;s Center | Cookies&#39;s Center</title>
-  <meta property="og:type" content="article">
-<meta property="og:title" content="Cookies&#39;s Center">
-<meta property="og:url" content="http://example.com/2023/05/11/Cookies-s-Center/index.html">
+  <title>反编译工具dnSpy的使用 | Cookies&#39;s Center</title>
+  <meta name="description" content="前言经常能在论坛看到基于.NET平台框架的实用工具,而这些工具往往是非开源的。 以学习为目的,我们可以通过反编译工具来获取其源码。 如果安装了Visual Studio,则可以在以下路径找到Microsoft官方的反编译工具ildasm 1C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools  该工具反编译">
+<meta property="og:type" content="article">
+<meta property="og:title" content="反编译工具dnSpy的使用">
+<meta property="og:url" content="http://example.com/2023/05/12/%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7dnSpy%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言经常能在论坛看到基于.NET平台框架的实用工具,而这些工具往往是非开源的。 以学习为目的,我们可以通过反编译工具来获取其源码。 如果安装了Visual Studio,则可以在以下路径找到Microsoft官方的反编译工具ildasm 1C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools  该工具反编译">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-05-11T09:59:05.000Z">
-<meta property="article:modified_time" content="2023-05-11T09:59:05.381Z">
+<meta property="og:image" content="http://example.com/assets/2023-05-12-12-31-12-image.png">
+<meta property="og:image" content="http://example.com/assets/2023-05-12-12-32-58-image.png">
+<meta property="og:image" content="http://example.com/assets/2023-05-12-12-38-38-image.png">
+<meta property="og:image" content="http://example.com/assets/2023-05-12-12-40-07-image.png">
+<meta property="og:image" content="http://example.com/assets/2023-05-12-12-41-50-image.png">
+<meta property="og:image" content="http://example.com/assets/2023-05-12-12-49-34-image.png">
+<meta property="og:image" content="http://example.com/assets/2023-05-12-12-53-57-image.png">
+<meta property="article:published_time" content="2023-05-12T02:39:56.000Z">
+<meta property="article:modified_time" content="2023-05-12T05:00:40.044Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="开发工具">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/2023-05-12-12-31-12-image.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/2023/05/11/Cookies-s-Center/index.html">
+  <link rel="canonical" href="http://example.com/2023/05/12/%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7dnSpy%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -116,28 +127,8 @@
         </li>
         
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories">
-            
-            <i class="icon icon-folder"></i>
-            
-            <span class="menu-title">分类</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags">
-            
-            <i class="icon icon-tags"></i>
-            
-            <span class="menu-title">标签</span>
-          </a>
-        </li>
-        
-        
         <li class="menu-item menu-item-repository">
-          <a href="/repository">
+          <a target="_blank" rel="noopener" href="https://github.com/voodoocookies?tab=repositories">
             
             <i class="icon icon-project"></i>
             
@@ -175,12 +166,33 @@
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/NET/">.NET</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/WPF/" rel="tag">WPF</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" rel="tag">开发工具</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/WPF/" style="font-size: 13px;">WPF</a> <a href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" style="font-size: 13px;">开发工具</a>
+    </div>
+  </div>
+
     
       
   <div class="widget">
@@ -202,13 +214,13 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/NET/">.NET</a>
               </p>
               <p class="item-title">
-                <a href="/2023/05/11/Cookies-s-Center/" class="title">Cookies&#39;s Center</a>
+                <a href="/2023/05/12/%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7dnSpy%E7%9A%84%E4%BD%BF%E7%94%A8/" class="title">反编译工具dnSpy的使用</a>
               </p>
               <p class="item-date">
-                <time datetime="2023-05-11T09:59:05.000Z" itemprop="datePublished">2023-05-11</time>
+                <time datetime="2023-05-12T02:39:56.000Z" itemprop="datePublished">2023-05-12</time>
               </p>
             </div>
           </li>
@@ -217,13 +229,13 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/NET/">.NET</a>
               </p>
               <p class="item-title">
-                <a href="/2023/05/11/hello-world/" class="title">Hello World</a>
+                <a href="/2023/05/12/WPF%E4%B8%AD%E7%9A%84MVVM%E6%A8%A1%E5%BC%8F/" class="title">WPF中的MVVM模式</a>
               </p>
               <p class="item-date">
-                <time datetime="2023-05-11T09:50:12.360Z" itemprop="datePublished">2023-05-11</time>
+                <time datetime="2023-05-12T02:39:56.000Z" itemprop="datePublished">2023-05-12</time>
               </p>
             </div>
           </li>
@@ -241,14 +253,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-Cookies-s-Center" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-反编译工具dnSpy的使用" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      Cookies&#39;s Center
+      反编译工具dnSpy的使用
     </h1>
   
 
@@ -256,12 +268,22 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2023/05/11/Cookies-s-Center/" class="article-date">
-	  <time datetime="2023-05-11T09:59:05.000Z" itemprop="datePublished">2023-05-11</time>
+	<a href="/2023/05/12/%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7dnSpy%E7%9A%84%E4%BD%BF%E7%94%A8/" class="article-date">
+	  <time datetime="2023-05-12T02:39:56.000Z" itemprop="datePublished">2023-05-12</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/NET/">.NET</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" rel="tag">开发工具</a>
+  </span>
+
 
         
 	<span class="article-read hidden-xs">
@@ -272,13 +294,36 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/05/11/Cookies-s-Center/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/05/12/%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7dnSpy%E7%9A%84%E4%BD%BF%E7%94%A8/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>经常能在论坛看到基于.NET平台框架的实用工具,而这些工具往往是非开源的。</p>
+<p>以学习为目的,我们可以通过反编译工具来获取其源码。</p>
+<p>如果安装了Visual Studio,则可以在以下路径找到Microsoft官方的反编译工具ildasm</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools</span><br></pre></td></tr></table></figure>
+
+<p>该工具反编译结果为IL语言,与C#有语法差异,故本文将介绍第三方反编译工具dnSpy的使用</p>
+<h2 id="dnSpy安装"><a href="#dnSpy安装" class="headerlink" title="dnSpy安装"></a>dnSpy安装</h2><p>dnSpy的下载-&gt; <a target="_blank" rel="noopener" href="https://github.com/dnSpy/dnSpy/releases/tag/v6.1.8">Click</a> 下载后解压到任意目录即可</p>
+<h2 id="dnSpy使用"><a href="#dnSpy使用" class="headerlink" title="dnSpy使用"></a>dnSpy使用</h2><p>点击dnSpy.exe启动程序</p>
+<p><img src="/../assets/2023-05-12-12-31-12-image.png"></p>
+<p>进入主界面,点击左上角的文件,再点击打开,在弹窗中选择目标文件即可</p>
+<p><img src="/../assets/2023-05-12-12-32-58-image.png"></p>
+<p>这里以笔者的控制台文件为例,通过反编译exe文件获取源码</p>
+<p><img src="/../assets/2023-05-12-12-38-38-image.png"></p>
+<p>在右键菜单,选择你想要编译的部分,这里以编辑类为例</p>
+<p><img src="/../assets/2023-05-12-12-40-07-image.png"></p>
+<p>在弹窗中修改类的内容后点击右下角的编译按钮进行保存</p>
+<p><img src="/../assets/2023-05-12-12-41-50-image.png"></p>
+<p>再次右击,选择调试(根据程序类型选择32bit或64bit版本的dnSpy进行调试)</p>
+<p><img src="/../assets/2023-05-12-12-49-34-image.png"></p>
+<p>在弹出窗口内选择确认后出现运行结果</p>
+<p><img src="/../assets/2023-05-12-12-53-57-image.png"></p>
+<h2 id="后谈"><a href="#后谈" class="headerlink" title="后谈"></a>后谈</h2><p>实际中还会有加密等情况需要依赖反混淆工具。(de4dot)</p>
+<p>反编译仅用于学习,请勿传播未开源项目的反编译结果。</p>
+
       
     </div>
     <div class="article-footer">
@@ -287,11 +332,11 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://example.com/2023/05/11/Cookies-s-Center/" title="Cookies&#39;s Center" target="_blank" rel="external">http://example.com/2023/05/11/Cookies-s-Center/</a>
+      <a href="https://voodoocookies.github.io/2023/05/12/反编译工具dnSpy的使用/" title="反编译工具dnSpy的使用" target="_blank" rel="external">反编译工具dnSpy的使用</a>
     </li>
     
     <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外,均采用<a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a>许可协议。转载请注明出处！
     </li>
   </ul>
 </blockquote>
@@ -307,7 +352,7 @@
       </div>
       <div class="media-body">
         <h3 class="media-heading"><a href="https://github.com/voodoocookies" target="_blank"><span class="text-dark">voodoocookies</span><small class="ml-1x"></small></a></h3>
-        <div></div>
+        <div>全职家庭主妇 写程序只是消遣 文章除字数外真实性均有待考察</div>
       </div>
     </figure>
   </div>
@@ -320,8 +365,6 @@
     
   <section id="comments">
   	
-      <div id="vcomments"></div>
-    
   </section>
 
 
@@ -335,7 +378,7 @@
     
     
     <li class="next">
-      <a href="/2023/05/11/hello-world/" title="Hello World"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2023/05/12/WPF%E4%B8%AD%E7%9A%84MVVM%E6%A8%A1%E5%BC%8F/" title="WPF中的MVVM模式"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -412,31 +455,6 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
    
-    
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/valine"></script>
-  <script type="text/javascript">
-  var GUEST = ['nick', 'mail', 'link'];
-  var meta = 'nick,mail,link';
-  meta = meta.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#vcomments',
-    verify: false,
-    notify: false,
-    appId: '',
-    appKey: '',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: meta,
-    pageSize: '10' || 10,
-    visitor: false
-  });
-  </script>
-
-     
-
 
 
 

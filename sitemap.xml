@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2023/05/11/Cookies-s-Center/</loc>
+    <loc>http://example.com/2023/05/12/WPF%E4%B8%AD%E7%9A%84MVVM%E6%A8%A1%E5%BC%8F/</loc>
     
-    <lastmod>2023-05-11</lastmod>
+    <lastmod>2023-05-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/2023/05/11/hello-world/</loc>
+    <loc>http://example.com/2023/05/12/%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7dnSpy%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
-    <lastmod>2023-05-11</lastmod>
+    <lastmod>2023-05-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,12 +22,33 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2023-05-11</lastmod>
+    <lastmod>2023-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
+  <url>
+    <loc>http://example.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2023-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/WPF/</loc>
+    <lastmod>2023-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>http://example.com/categories/NET/</loc>
+    <lastmod>2023-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

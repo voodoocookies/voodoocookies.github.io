@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-11T09:59:05.381Z</updated>
+  <updated>2023-05-12T05:00:40.044Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,35 +17,51 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Cookies&#39;s Center</title>
-    <link href="http://example.com/2023/05/11/Cookies-s-Center/"/>
-    <id>http://example.com/2023/05/11/Cookies-s-Center/</id>
-    <published>2023-05-11T09:59:05.000Z</published>
-    <updated>2023-05-11T09:59:05.381Z</updated>
+    <title>反编译工具dnSpy的使用</title>
+    <link href="http://example.com/2023/05/12/%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7dnSpy%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2023/05/12/%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7dnSpy%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-05-12T02:39:56.000Z</published>
+    <updated>2023-05-12T05:00:40.044Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>经常能在论坛看到基于.NET平台框架的实用工具,而这些工具往往是非开源的。</p><p>以学习为目的,我们可以通过反编译工具来获取其源码。</p><p>如果安装了Visual Studio,则可以在以下路径找到Microsoft官方的反编译工具ildasm</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools</span><br></pre></td></tr></table></figure><p>该工具反编译结果为IL语言,与C#有语法差异,故本文将介绍第三方反编译工具dnSpy的使用</p><h2 id="dnSpy安装"><a href="#dnSpy安装" class="headerlink" title="dnSpy安装"></a>dnSpy安装</h2><p>dnSpy的下载-&gt; <a href="https://github.com/dnSpy/dnSpy/releases/tag/v6.1.8">Click</a> 下载后解压到任意目录即可</p><h2 id="dnSpy使用"><a href="#dnSpy使用" class="headerlink" title="dnSpy使用"></a>dnSpy使用</h2><p>点击dnSpy.exe启动程序</p><p><img src="/../assets/2023-05-12-12-31-12-image.png"></p><p>进入主界面,点击左上角的文件,再点击打开,在弹窗中选择目标文件即可</p><p><img src="/../assets/2023-05-12-12-32-58-image.png"></p><p>这里以笔者的控制台文件为例,通过反编译exe文件获取源码</p><p><img src="/../assets/2023-05-12-12-38-38-image.png"></p><p>在右键菜单,选择你想要编译的部分,这里以编辑类为例</p><p><img src="/../assets/2023-05-12-12-40-07-image.png"></p><p>在弹窗中修改类的内容后点击右下角的编译按钮进行保存</p><p><img src="/../assets/2023-05-12-12-41-50-image.png"></p><p>再次右击,选择调试(根据程序类型选择32bit或64bit版本的dnSpy进行调试)</p><p><img src="/../assets/2023-05-12-12-49-34-image.png"></p><p>在弹出窗口内选择确认后出现运行结果</p><p><img src="/../assets/2023-05-12-12-53-57-image.png"></p><h2 id="后谈"><a href="#后谈" class="headerlink" title="后谈"></a>后谈</h2><p>实际中还会有加密等情况需要依赖反混淆工具。(de4dot)</p><p>反编译仅用于学习,请勿传播未开源项目的反编译结果。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;经常能在论坛看到基于.NET平台框架的实用工具,而这些工具往往是非开源的。&lt;/p&gt;
+&lt;p&gt;以学习为目的,我们可以通过反编译工具来获取其源码。</summary>
+      
     
     
     
+    <category term=".NET" scheme="http://example.com/categories/NET/"/>
     
+    
+    <category term="开发工具" scheme="http://example.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2023/05/11/hello-world/"/>
-    <id>http://example.com/2023/05/11/hello-world/</id>
-    <published>2023-05-11T09:50:12.360Z</published>
-    <updated>2023-05-11T09:50:12.360Z</updated>
+    <title>WPF中的MVVM模式</title>
+    <link href="http://example.com/2023/05/12/WPF%E4%B8%AD%E7%9A%84MVVM%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://example.com/2023/05/12/WPF%E4%B8%AD%E7%9A%84MVVM%E6%A8%A1%E5%BC%8F/</id>
+    <published>2023-05-12T02:39:56.000Z</published>
+    <updated>2023-05-12T05:33:08.320Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="INotifyPropertyChanged"><a href="#INotifyPropertyChanged" class="headerlink" title="INotifyPropertyChanged"></a>INotifyPropertyChanged</h2><h2 id="ViewModel"><a href="#ViewModel" class="headerlink" title="ViewModel"></a>ViewModel</h2><h2 id="ICommand"><a href="#ICommand" class="headerlink" title="ICommand"></a>ICommand</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;h2 id=&quot;INotifyPropertyChanged&quot;&gt;&lt;a href=&quot;#INotifyPropertyChanged&quot; class=&quot;</summary>
       
     
     
     
+    <category term=".NET" scheme="http://example.com/categories/NET/"/>
+    
+    
+    <category term="WPF" scheme="http://example.com/tags/WPF/"/>
     
   </entry>
   
