@@ -29,14 +29,14 @@
 
   
   <url>
-    <loc>http://example.com/tags/WPF/</loc>
+    <loc>http://example.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://example.com/tags/WPF/</loc>
     <lastmod>2023-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
